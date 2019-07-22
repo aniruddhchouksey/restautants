@@ -14,7 +14,7 @@ export default function ButtonSizes() {
 
   return (
     <Grid container direction={"column"}>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -24,7 +24,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -34,7 +34,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -44,7 +44,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -54,7 +54,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -64,7 +64,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -74,7 +74,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -84,7 +84,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -94,7 +94,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -104,7 +104,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -114,7 +114,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"
@@ -124,7 +124,7 @@ export default function ButtonSizes() {
           Large
         </Button>
       </Grid>
-      <Grid items>
+      <Grid item>
         <Button
           variant="contained"
           size="medium"

@@ -9,12 +9,19 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ButtonSizes() {
+
+export default function ButtonSizes(props:{date:Date,onClick: (date:Date)=>void }) {
   const classes = useStyles();
+
+    function incrementWeek(){
+        let nextDate = new Date(props.date);
+        nextDate.setDate(nextDate.getDate()+7)
+        props.onClick(nextDate)
+    }
 
   return (
     <div>
-      <Fab color="secondary" aria-label="Add" className={classes.margin}>
+      <Fab color="secondary" aria-label="Add" onClick={incrementWeek}  className={classes.margin}>
         <AddIcon fontSize="large" />
       </Fab>
     </div>
