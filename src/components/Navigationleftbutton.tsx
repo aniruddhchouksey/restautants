@@ -15,6 +15,7 @@ export default function ButtonSizes(props:{date:Date,onClick: (date:Date)=>void 
     function decrementWeek(){
         let nextDate = new Date(props.date);
         nextDate.setDate(nextDate.getDate()-7);
+        if(new Date().getSeconds()< nextDate.getSeconds())
         props.onClick(nextDate)
     }
   return (
