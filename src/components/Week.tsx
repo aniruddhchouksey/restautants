@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Fab from "@material-ui/core/Fab";
-import { Grid } from "@material-ui/core";
+import { Grid, IconButton, Box } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
   margin: {
@@ -21,25 +21,29 @@ export default function ButtonSizes(props: { week: Date[] }) {
     let r: JSX.Element[] = [];
     for (let i in week) {
       r.push(
-        <Grid key={i}>
-          <Fab
+        <Grid key={i} style={{ width: "14%" }}>
+          <Grid>{formatDate(week[i])[0]}</Grid>
+          <IconButton
+            style={{ marginTop: "0px", padding: "8px" }}
             href=""
-            color="secondary"
+            color="primary"
+            size="medium"
             aria-label="Add"
             className={classes.margin}
           >
-            <Grid container direction="column">
-              <Grid>{formatDate(week[i])[0]}</Grid>
-              <Grid>{formatDate(week[i])[1]}</Grid>
+            <Grid>
+              <Box fontSize="h4.fontSize" fontWeight="bold">
+                {formatDate(week[i])[1]}
+              </Box>
             </Grid>
-          </Fab>
+          </IconButton>
         </Grid>
       );
     }
     return r;
   };
   return (
-    <Grid container justify="space-around">
+    <Grid container justify="space-between">
       {renderWeek()}
     </Grid>
   );
